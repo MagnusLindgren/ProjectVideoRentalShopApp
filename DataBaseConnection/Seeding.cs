@@ -2,7 +2,7 @@
 
 namespace DataBaseConnection
 {
-    class Program
+    class Seeding
     {
         static void Main(string[] args)
         {
