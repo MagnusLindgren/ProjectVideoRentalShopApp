@@ -34,6 +34,6 @@ namespace DataBaseConnection
         public int Id { get; set; }
         public DateTime StartDate { get; set; }
         public virtual Member RentedBy { get; set; }
-        public virtual List<Movie> Movies { get; set; }
+        public virtual Movie Movies { get; set; }
     }
 }
