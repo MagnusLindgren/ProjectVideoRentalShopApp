@@ -21,6 +21,16 @@
                     </LinearGradientBrush>
                 </Border.Background>
             </Border>
+
+            <StackPanel VerticalAlignment="Center">
+                <Image Source="C:\Users\svant\source\repos\ProjectVideoRentalShopApp\ProjectVideoRentalShopApp\Images\inloggning bild.jpg" Width="80"/>
+                <TextBlock Text="Movie Night"
+                           FontWeight="Light"
+                           FontFamily="helvetica"
+                           FontSize="22"
+                           Foreground="White"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
             
             
         </Grid>
