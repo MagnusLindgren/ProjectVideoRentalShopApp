@@ -23,6 +23,7 @@ namespace DataBaseConnection
                 ctx.AddRange(new List<Member>
                 {
                     new Member {
+                                Username    = "Booken",
                                 FirstName   = "Anna",
                                 LastName    = "Book",
                                 Address     = "Fågelgatan 5",
@@ -31,6 +32,7 @@ namespace DataBaseConnection
                                 },
 
                     new Member {
+                                Username    = "Arvid123",
                                 FirstName   = "Arvid",
                                 LastName    = "Svensson",
                                 Address     = "Storgatan 23",
@@ -45,13 +47,18 @@ namespace DataBaseConnection
                 var readLines = File.ReadAllLines(@"..\..\..\SeedData\projektarbetefil.txt");
                 for (int i = 0; i < readLines.Length; i++)
                 {
-                    //titel, category, year, director, actor
+                    //titel, category, year, director, actor, url
                     var actors = new List<Actor>();
                     var item = readLines[i].Split(", ");
                     var actor = new Actor { Name = item[4] };
+                    var url = item[5];
+
+                    // Tagit från Björns kod. Hoppa över icke fungerande Url:er
+                    try { var test = new Uri(url); } 
+                    catch (Exception) { continue; }
 
                     actors.Add(actor);
-                    movies.Add(new Movie { Title = item[0], Category = item[1], Year = int.Parse(item[2]), Director = item[3], Actors = actors  });
+                    movies.Add(new Movie { Title = item[0], Category = item[1], Year = int.Parse(item[2]), Director = item[3], ImageUrl = url, Actors = actors  });
                     ctx.Actors.Update(actor); // TODO Fixa så den inte lägger till dubbletter.                    
                 }
 

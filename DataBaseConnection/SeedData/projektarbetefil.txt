@@ -1,28 +1,28 @@
-Pulp Fiction, Action, 1994, Quentin Tarantino, John Travolta
-Iron Man, Action, 2008, Jon Favreau, Robert Downey Jr
-Iron Man 2, Action, 2010, Jon Favreau, Robert Downey Jr
-Hard Boiled, Action, 1992, John Woo, Yun-Fat Chow
-A Bittersweet Life, Action, 2005, Jee-woon Kim, Byung-hun Lee
-Hereditary, Horror, 2018, Ari Aster, Toni Collette
-American Psycho, Horror, 2000, Mary Harron, Christian Bale
-Psycho, Horror, 1960, Alfred Hitchcock, Anthony Perkins
-The Exorcist, Horror, 1973, William Friedkin, Max von Sydow
-Insidious, Horror, 2010, James Wan, Patrick Wilson
-Toy Story, Animated, 1995, John Lasseter, Tom Hanks
-Up, Animated, 2009, Pete Docter, Edward Asner
-Lion King, Animated, 1994, Roger Allers, Jeremy Irons
-Coco, Animated, 2017, Lee Unkrich, Anthony Gonzalez
-Brave, Animated, 2012, Mark Andrews, Kelly Macdonald
-Ice Age, Animated, 2002, Chris Wedge, Denis Leary
-The Shawshank Redemption, Drama, 1994, Frank Darabont, Morgan Freeman
-Titanic, Drama, 1997, James Cameron, Leonardo DiCaprio
-There Will Be Blood, Drama, 2007, Paul Thomas Anderson, Daniel Day-Lewis
-Cast Away, Drama, 2000, Robert Zemeckis, Tom Hanks
-Gran Torino, Drama, 2008, Clint Eastwood, Clint Eastwood
-Slumdog Millionaire, Drama, 2008, Danny Boyle, Dev Patel
-Juno, Drama, 2007, Jason Reitman, Ellen Page
-American Beauty, Drama, 1999, Sam Mendes, Kevin Spacey
-The Social Network, Drama, 2010, David Fincher, Jesse Eisenberg
-The Green Mile, Drama, 1999, Frank Darabont, Tom Hanks
-Children of Men, Drama, 2006, Alfonso Cuarón, Clive Owen
-Contact, Drama, 1997, Robert Zemeckis, Jodie Foster
+Pulp Fiction, Action, 1994, Quentin Tarantino, John Travolta, https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR1,0,182,268_AL_.jpg
+Iron Man, Action, 2008, Jon Favreau, Robert Downey Jr, https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_UX182_CR0,0,182,268_AL_.jpg
+Iron Man 2, Action, 2010, Jon Favreau, Robert Downey Jr, https://m.media-amazon.com/images/M/MV5BMTM0MDgwNjMyMl5BMl5BanBnXkFtZTcwNTg3NzAzMw@@._V1_UX182_CR0,0,182,268_AL_.jpg
+Hard Boiled, Action, 1992, John Woo, Yun-Fat Chow, https://m.media-amazon.com/images/M/MV5BOTIzZGU4ZWMtYmNjMy00NzU0LTljMGYtZmVkMDYwN2U2MzYwL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY268_CR0,0,182,268_AL_.jpg
+A Bittersweet Life, Action, 2005, Jee-woon Kim, Byung-hun Lee, https://m.media-amazon.com/images/M/MV5BYWExMGMyZTYtMTRmZS00M2VlLWI0MzMtYmE5MzQ1N2MzOGE4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg
+Hereditary, Horror, 2018, Ari Aster, Toni Collette, https://m.media-amazon.com/images/M/MV5BOTU5MDg3OGItZWQ1Ny00ZGVmLTg2YTUtMzBkYzQ1YWIwZjlhXkEyXkFqcGdeQXVyNTAzMTY4MDA@._V1_UX182_CR0,0,182,268_AL_.jpg
+American Psycho, Horror, 2000, Mary Harron, Christian Bale, https://m.media-amazon.com/images/M/MV5BZTM2ZGJmNjQtN2UyOS00NjcxLWFjMDktMDE2NzMyNTZlZTBiXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg
+Psycho, Horror, 1960, Alfred Hitchcock, Anthony Perkins, https://m.media-amazon.com/images/M/MV5BNTQwNDM1YzItNDAxZC00NWY2LTk0M2UtNDIwNWI5OGUyNWUxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg
+The Exorcist, Horror, 1973, William Friedkin, Max von Sydow, https://m.media-amazon.com/images/M/MV5BYjhmMGMxZDYtMTkyNy00YWVmLTgyYmUtYTU3ZjcwNTBjN2I1XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg
+Insidious, Horror, 2010, James Wan, Patrick Wilson, https://m.media-amazon.com/images/M/MV5BMTYyOTAxMDA0OF5BMl5BanBnXkFtZTcwNzgwNTc1NA@@._V1_UX182_CR0,0,182,268_AL_.jpg
+Toy Story, Animated, 1995, John Lasseter, Tom Hanks, https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_UX182_CR0,0,182,268_AL_.jpg
+Up, Animated, 2009, Pete Docter, Edward Asner, https://m.media-amazon.com/images/M/MV5BMTk3NDE2NzI4NF5BMl5BanBnXkFtZTgwNzE1MzEyMTE@._V1_UX182_CR0,0,182,268_AL_.jpg
+Lion King, Animated, 1994, Roger Allers, Jeremy Irons, https://m.media-amazon.com/images/M/MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_UX182_CR0,0,182,268_AL_.jpg
+Coco, Animated, 2017, Lee Unkrich, Anthony Gonzalez, https://m.media-amazon.com/images/M/MV5BYjQ5NjM0Y2YtNjZkNC00ZDhkLWJjMWItN2QyNzFkMDE3ZjAxXkEyXkFqcGdeQXVyODIxMzk5NjA@._V1_UY268_CR3,0,182,268_AL_.jpg
+Brave, Animated, 2012, Mark Andrews, Kelly Macdonald, https://m.media-amazon.com/images/M/MV5BMzgwODk3ODA1NF5BMl5BanBnXkFtZTcwNjU3NjQ0Nw@@._V1_UX182_CR0,0,182,268_AL_.jpg
+Ice Age, Animated, 2002, Chris Wedge, Denis Leary, https://m.media-amazon.com/images/M/MV5BMmYxZWY2NzgtYzJjZC00MDFmLTgxZTctMjRiYjdjY2FhODg3XkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_UX182_CR0,0,182,268_AL_.jpg
+The Shawshank Redemption, Drama, 1994, Frank Darabont, Morgan Freeman, https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg
+Titanic, Drama, 1997, James Cameron, Leonardo DiCaprio, https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX182_CR0,0,182,268_AL_.jpg
+There Will Be Blood, Drama, 2007, Paul Thomas Anderson, Daniel Day-Lewis, https://m.media-amazon.com/images/M/MV5BMjAxODQ4MDU5NV5BMl5BanBnXkFtZTcwMDU4MjU1MQ@@._V1_UX182_CR0,0,182,268_AL_.jpg
+Cast Away, Drama, 2000, Robert Zemeckis, Tom Hanks, https://m.media-amazon.com/images/M/MV5BN2Y5ZTU4YjctMDRmMC00MTg4LWE1M2MtMjk4MzVmOTE4YjkzXkEyXkFqcGdeQXVyNTc1NTQxODI@._V1_UX182_CR0,0,182,268_AL_.jpg
+Gran Torino, Drama, 2008, Clint Eastwood, Clint Eastwood, https://m.media-amazon.com/images/M/MV5BMTc5NTk2OTU1Nl5BMl5BanBnXkFtZTcwMDc3NjAwMg@@._V1_UX182_CR0,0,182,268_AL_.jpg
+Slumdog Millionaire, Drama, 2008, Danny Boyle, Dev Patel, https://m.media-amazon.com/images/M/MV5BZmNjZWI3NzktYWI1Mi00OTAyLWJkNTYtMzUwYTFlZDA0Y2UwXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg
+Juno, Drama, 2007, Jason Reitman, Ellen Page, https://m.media-amazon.com/images/M/MV5BMTIwMDgwODc5Nl5BMl5BanBnXkFtZTYwMjQzMDM4._V1_UX182_CR0,0,182,268_AL_.jpg
+American Beauty, Drama, 1999, Sam Mendes, Kevin Spacey, https://m.media-amazon.com/images/M/MV5BNTBmZWJkNjctNDhiNC00MGE2LWEwOTctZTk5OGVhMWMyNmVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg
+The Social Network, Drama, 2010, David Fincher, Jesse Eisenberg, https://m.media-amazon.com/images/M/MV5BOGUyZDUxZjEtMmIzMC00MzlmLTg4MGItZWJmMzBhZjE0Mjc1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg
+The Green Mile, Drama, 1999, Frank Darabont, Tom Hanks, https://m.media-amazon.com/images/M/MV5BMTUxMzQyNjA5MF5BMl5BanBnXkFtZTYwOTU2NTY3._V1_UX182_CR0,0,182,268_AL_.jpg
+Children of Men, Drama, 2006, Alfonso Cuarón, Clive Owen, https://m.media-amazon.com/images/M/MV5BMTQ5NTI2NTI4NF5BMl5BanBnXkFtZTcwNjk2NDA2OQ@@._V1_UX182_CR0,0,182,268_AL_.jpg
+Contact, Drama, 1997, Robert Zemeckis, Jodie Foster, https://m.media-amazon.com/images/M/MV5BYWNkYmFiZjUtYmI3Ni00NzIwLTkxZjktN2ZkMjdhMzlkMDc3XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UX182_CR0,0,182,268_AL_.jpg
