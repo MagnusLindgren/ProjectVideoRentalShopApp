@@ -33,7 +33,23 @@
                            Foreground="White"
                            HorizontalAlignment="Center"/>
             </StackPanel>
-            
+
+            <StackPanel Grid.Row="1">
+                
+                    <TextBox   FontFamily="helvetica"
+                        FontWeight="Light"
+                        Text="Username"
+                        FontSize="20"
+                        HorizontalAlignment="Center"
+                        Foreground="White"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Width="235"
+                        HorizontalContentAlignment="Left"
+                        Opacity="0.5"
+                        Height="25"
+                        Margin="63,0,0,0"/>
+            </StackPanel>
             
         </Grid>
         
