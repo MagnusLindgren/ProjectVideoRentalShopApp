@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectVideoRentalShopApp"
         mc:Ignorable="d"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         AllowsTransparency="True" Background="Transparent"
         Title="Login" Height="450" Width="380">
     
@@ -33,8 +34,8 @@
                            Foreground="White"
                            HorizontalAlignment="Center"/>
             </StackPanel>
-
-            <StackPanel Grid.Row="1">
+            
+            <StackPanel Grid.Row="1" Orientation="Horizontal">
                 
                     <TextBox   FontFamily="helvetica"
                         FontWeight="Light"
@@ -49,6 +50,10 @@
                         Opacity="0.5"
                         Height="25"
                         Margin="63,0,0,0"/>
+                <iconPacks:PackIconMaterial Kind="Account"
+                                            VerticalAlignment="Center"
+                                            HorizontalAlignment="Center"
+                                            Foreground="White"/>
             </StackPanel>
             
         </Grid>
