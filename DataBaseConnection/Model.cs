@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace DataBaseConnection
@@ -17,11 +18,13 @@ namespace DataBaseConnection
         public string Category { get; set; }
         public int Year { get; set; }
         public string Director { get; set; }
+        public string ImageUrl { get; set; }
         public virtual List<Actor> Actors { get; set; }
     }
     public class Member
     {
-        public int Id { get; set; }
+        [Key]
+        public string Username { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Address { get; set; }

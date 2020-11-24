@@ -12,11 +12,15 @@
   </PropertyGroup>
   
   <ItemGroup>
+    <None Remove="Images\inloggning bild.jpg" />
+  </ItemGroup>
+  
+  <ItemGroup>
     <ProjectReference Include="..\DataBaseConnection\DataBaseConnection.csproj" />
   </ItemGroup>
   
   <ItemGroup>
-    <Folder Include="Images\" />
+    <Resource Include="Images\inloggning bild.jpg" />
   </ItemGroup>
 
 </Project>
