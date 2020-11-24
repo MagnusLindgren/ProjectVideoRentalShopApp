@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectVideoRentalShopApp"
         mc:Ignorable="d"
+        AllowsTransparency="True" Background="Transparent"
         Title="Login" Height="450" Width="380">
+    
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
