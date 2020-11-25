@@ -5,10 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectVideoRentalShopApp"
         mc:Ignorable="d"
+        
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        WindowStyle="None" ResizeMode="NoResize"
         AllowsTransparency="True" Background="Transparent"
         Title="Login" Height="450" Width="380">
     
+
+
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
@@ -34,9 +38,10 @@
                            Foreground="White"
                            HorizontalAlignment="Center"/>
             </StackPanel>
-            
-            <StackPanel Grid.Row="1" Orientation="Horizontal">
-                
+
+            <StackPanel Grid.Row="1"/>
+            <StackPanel Orientation="Horizontal">
+
                     <TextBox   FontFamily="helvetica"
                         FontWeight="Light"
                         Text="Username"
@@ -55,7 +60,37 @@
                                             HorizontalAlignment="Center"
                                             Foreground="White"/>
             </StackPanel>
-            
+                <Border Width="250"
+                        Height="2"
+                        Background="White"
+                        Opacity="0.5"/>
+
+
+
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                <TextBox   FontFamily="helvetica"
+                        FontWeight="Light"
+                        Text="Password"
+                        FontSize="20"
+                        HorizontalAlignment="Center"
+                        Foreground="White"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Width="235"
+                        HorizontalContentAlignment="Left"
+                        Opacity="0.5"
+                        Height="25"
+                        Margin="63,0,0,0"/>
+                <iconPacks:PackIconMaterial Kind="FormTextboxPassword"
+                                            VerticalAlignment="Center"
+                                            HorizontalAlignment="Center"
+                                            Foreground="White"/>
+            </StackPanel>
+                <Border Width="250"
+                        Height="2"
+                        Background="White"
+                        Opacity="0.5"/>
+
         </Grid>
         
     </Grid>
