@@ -7,7 +7,7 @@
         xmlns:sub="clr-namespace:ProjectVideoRentalShopApp.SubWindows"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="DarkGray">
         <!-- 
             Ett grid för att dela in mitt fönster i en del som alla 
             vyer delar och en del som roteras ut
@@ -25,7 +25,7 @@
         <Ellipse Grid.Column="0" Grid.Row="0">
             <!-- Lite häftig clipping magi -->
             <Ellipse.Fill>
-                <ImageBrush ImageSource="Images/mig.jpg" Stretch="UniformToFill"></ImageBrush>
+                <ImageBrush ImageSource="Images/egoavatar.png" Stretch="UniformToFill"></ImageBrush>
             </Ellipse.Fill>
         </Ellipse>
 
@@ -34,9 +34,9 @@
 
         <!-- Knapparna till vänster -->
         <StackPanel Grid.Column="0" Grid.Row="1" Margin="20">
-            <Button Height="100" Margin="0,0,0,10" Click="GoHome_Click">Home</Button>
-            <Button Height="100" Margin="0,0,0,10" Click="GoMyPage_Click">My Page</Button>
-            <Button Height="100" Margin="0,0,0,10" Click="GoStore_Click">Store</Button>
+            <Button Height="30" Margin="0,0,0,10" Click="GoHome_Click">Home</Button>
+            <Button Height="30" Margin="0,0,0,10" Click="GoMyPage_Click">My Page</Button>
+            <Button Height="30" Margin="0,0,0,10" Click="GoStore_Click">Store</Button>
         </StackPanel>
 
         <!-- 

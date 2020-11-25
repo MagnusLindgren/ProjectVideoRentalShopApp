@@ -12,6 +12,7 @@
   </PropertyGroup>
   
   <ItemGroup>
+    <None Remove="Images\egoavatar.png" />
     <None Remove="Images\inloggning bild.jpg" />
   </ItemGroup>
   
@@ -24,6 +25,7 @@
   </ItemGroup>
   
   <ItemGroup>
+    <Resource Include="Images\egoavatar.png" />
     <Resource Include="Images\inloggning bild.jpg" />
   </ItemGroup>
 
