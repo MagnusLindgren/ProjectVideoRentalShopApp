@@ -4,19 +4,57 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectVideoRentalShopApp"
+        xmlns:sub="clr-namespace:ProjectVideoRentalShopApp.SubWindows"
         mc:Ignorable="d"
-        Title="Film Bibliotek" Height="450" Width="800">
-    <ScrollViewer>
-    <Grid Name="MovieGrid" Background="Gray" ShowGridLines="False">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-                <ColumnDefinition />
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-            </Grid.RowDefinitions>
+        Title="Main" Height="450" Width="800">
+    <Grid>
+        <!-- 
+            Ett grid för att dela in mitt fönster i en del som alla 
+            vyer delar och en del som roteras ut
+        -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <!-- Huvudet uppe till vänster -->
+        <Ellipse Grid.Column="0" Grid.Row="0">
+            <!-- Lite häftig clipping magi -->
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Images/mig.jpg" Stretch="UniformToFill"></ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+
+        <!-- Titeln längst upp -->
+        <Label Grid.Column="1" Grid.Row="0" Name="Title" Content="Home" FontSize="40" HorizontalContentAlignment="Center"></Label>
+
+        <!-- Knapparna till vänster -->
+        <StackPanel Grid.Column="0" Grid.Row="1" Margin="20">
+            <Button Height="100" Margin="0,0,0,10" Click="GoHome_Click">Home</Button>
+            <Button Height="100" Margin="0,0,0,10" Click="GoMyPage_Click">My Page</Button>
+            <Button Height="100" Margin="0,0,0,10" Click="GoStore_Click">Store</Button>
+        </StackPanel>
+
+        <!-- 
+            Massa UserControls, en för varje vy som jag vill växla mellan
+            Visibility är en jättebra parameter för att styra vad som ska
+            visas och inte, för man kan manuellt i designern slå på och av
+            för att testa att designen fungerar.
+        
+            'sub:' som jag använder här för att för att komma åt mina UserControls
+            är definierat såhär:
+                xmlns:sub="clr-namespace:FleraVyer.SubViews"
+            längre upp i denna filen. Det är liknande att skriva 
+            'using FleraVyer.SubViews;' i C# kan man säga.
+        -->
+        <Grid Grid.Column="1" Grid.Row="1">
+            <sub:Home x:Name="Home" Visibility="Hidden"></sub:Home>
+            <sub:MyPage x:Name="MyPage" Visibility="Hidden"></sub:MyPage>
+            <sub:VideoStore x:Name="Store" Visibility="Hidden"></sub:VideoStore>
         </Grid>
-    </ScrollViewer>
+    </Grid>
 </Window>
