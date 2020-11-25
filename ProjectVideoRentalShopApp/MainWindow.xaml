@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:ProjectVideoRentalShopApp"
         xmlns:sub="clr-namespace:ProjectVideoRentalShopApp.SubWindows"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStyle="None" ResizeMode="NoResize"
+        Title="MainWindow" Height="800" Width="800">
     <Grid Background="DarkGray">
         <!-- 
             Ett grid för att dela in mitt fönster i en del som alla 
@@ -25,7 +26,7 @@
         <Ellipse Grid.Column="0" Grid.Row="0">
             <!-- Lite häftig clipping magi -->
             <Ellipse.Fill>
-                <ImageBrush ImageSource="Images/egoavatar.png" Stretch="UniformToFill"></ImageBrush>
+                <ImageBrush ImageSource="Images/egoavatar.png" Stretch="UniformToFill"></ImageBrush> <!-- Vi har ingen användarbild i databasen så använder denna så länge -->
             </Ellipse.Fill>
         </Ellipse>
 
@@ -37,6 +38,7 @@
             <Button Height="30" Margin="0,0,0,10" Click="GoHome_Click">Home</Button>
             <Button Height="30" Margin="0,0,0,10" Click="GoMyPage_Click">My Page</Button>
             <Button Height="30" Margin="0,0,0,10" Click="GoStore_Click">Store</Button>
+            <Button Height="30" Margin="0,0,0,10" Click="Exit_Click">Exit</Button>
         </StackPanel>
 
         <!-- 

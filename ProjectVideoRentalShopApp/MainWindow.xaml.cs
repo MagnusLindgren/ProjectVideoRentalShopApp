@@ -50,5 +50,10 @@ namespace ProjectVideoRentalShopApp
             MyPage.Visibility = Visibility.Hidden;
             VideoStore.Visibility = Visibility.Visible;
         }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }
