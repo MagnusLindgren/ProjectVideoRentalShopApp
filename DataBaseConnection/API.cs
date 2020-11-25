@@ -6,30 +6,39 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DataBaseConnection
 {
-    class API
+    public class API
     {
-        public static List<Movie> GetMovieSlice(int a, int b)
+        // Här har jag ett kontext tillgängligt för alla API metoder.
+        static Context ctx;
+
+        // Statiska konstruktorer kallas på innan den statiska klassen används.
+        static API()
         {
-            using var ctx = new Context();
-            return ctx.Movies.OrderBy(m => m.Title).Skip(a).Take(b).ToList();
+            ctx = new Context();
         }
-        public static Member GetMemberByUserName(string username)
+
+        public static List<Movie> GetMovieSlice(int skip_x, int take_x)
         {
-            using var ctx = new Context();
-            return ctx.Members.FirstOrDefault(m => m.Username.ToLower() == username.ToLower());
+            return ctx.Movies
+                .OrderBy(m => m.Title)
+                .Skip(skip_x)
+                .Take(take_x)
+                .ToList();
         }
-        public static bool RegisterSale(Member member, Movie movie)
+        public static Member GetCustomerByName(string name)
         {
-            using var ctx = new Context();
+            return ctx.Members
+                .FirstOrDefault(c => c.Username.ToLower() == name.ToLower());
+        }
+        public static bool RegisterSale(Member customer, Movie movie)
+        {
+            // Försök att lägga till ett nytt sales record
             try
             {
-                // Här säger jag åt contextet att inte oroa sig över innehållet i dessa records.
-                // Om jag inte gör detta så kommer den att försöka updatera databasens Id och cracha.
-                ctx.Entry(member).State = EntityState.Unchanged;
-                ctx.Entry(movie).State = EntityState.Unchanged;
+                ctx.Add(new Rental() { StartDate = DateTime.Now, RentedBy = customer, Movies = movie });
 
-                ctx.Add(new Rental() { StartDate = DateTime.Now, RentedBy = member, Movies = movie });
-                return ctx.SaveChanges() == 1;
+                bool one_record_added = ctx.SaveChanges() == 1;
+                return one_record_added;
             }
             catch (DbUpdateException e)
             {

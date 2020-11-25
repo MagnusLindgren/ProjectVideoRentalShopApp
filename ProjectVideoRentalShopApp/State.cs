@@ -6,7 +6,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ProjectVideoRentalShopApp
 {
-    class State
+    static class State
     {
+        public static Member User { get; set; }
+        public static List<Movie> Movies { get; set; }
+        public static Movie Pick { get; set; }
     }
 }
