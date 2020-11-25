@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ProjectVideoRentalShopApp"
         xmlns:sub="clr-namespace:ProjectVideoRentalShopApp.SubWindows"
         mc:Ignorable="d"
-        Title="Main" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800">
     <Grid>
         <!-- 
             Ett grid för att dela in mitt fönster i en del som alla 
@@ -51,10 +51,11 @@
             längre upp i denna filen. Det är liknande att skriva 
             'using FleraVyer.SubViews;' i C# kan man säga.
         -->
+
         <Grid Grid.Column="1" Grid.Row="1">
             <sub:Home x:Name="Home" Visibility="Hidden"></sub:Home>
             <sub:MyPage x:Name="MyPage" Visibility="Hidden"></sub:MyPage>
-            <sub:VideoStore x:Name="Store" Visibility="Hidden"></sub:VideoStore>
+            <sub:VideoStore x:Name="VideoStore" Visibility="Hidden"></sub:VideoStore>
         </Grid>
     </Grid>
 </Window>
