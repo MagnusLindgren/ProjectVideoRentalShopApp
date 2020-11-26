@@ -55,5 +55,10 @@ namespace ProjectVideoRentalShopApp
         {
             Application.Current.Shutdown();
         }
+
+        private void Title_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
     }
 }

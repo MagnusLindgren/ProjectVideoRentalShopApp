@@ -41,6 +41,8 @@ namespace DataBaseConnection
                                 }
                 });
 
+                API.AddNewMember("Torsten, Andersson, Traststigen 22, 0701404505, torand@rocketmail.com, Torand");
+
                 // Ladda in från testdata från txtfil
                 var movies = new List<Movie>();
                 

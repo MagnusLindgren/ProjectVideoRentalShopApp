@@ -31,7 +31,7 @@
         </Ellipse>
 
         <!-- Titeln längst upp -->
-        <Label Grid.Column="1" Grid.Row="0" Name="Title" Content="Home" FontSize="40" HorizontalContentAlignment="Center"></Label>
+        <Label Grid.Column="1" Grid.Row="0" Name="Title" Content="Home" FontSize="40" HorizontalContentAlignment="Center" MouseDown="Title_MouseDown"></Label>
 
         <!-- Knapparna till vänster -->
         <StackPanel Grid.Column="0" Grid.Row="1" Margin="20">

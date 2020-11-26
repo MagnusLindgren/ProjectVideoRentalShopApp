@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DataBaseConnection;
 
 namespace ProjectVideoRentalShopApp.SubWindows
 {
@@ -21,6 +22,9 @@ namespace ProjectVideoRentalShopApp.SubWindows
         public MyPage()
         {
             InitializeComponent();
+
+            //State.User = API.GetCustomerByName("torand");
+            //var currentUser = State.User;
         }
     }
 }
