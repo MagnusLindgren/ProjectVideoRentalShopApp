@@ -5,7 +5,7 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <!-- Styling för knapparna-->
-        <Style TargetType="Button" >
+        <Style TargetType="Button">
             <Setter Property="Background" Value="#fff"/>
             <Setter Property="Foreground" Value="#000"/>
             <Setter Property="FontSize" Value="12"/>
