@@ -25,7 +25,7 @@ namespace DataBaseConnection
                 .Take(take_x)
                 .ToList();
         }
-        public static Member GetCustomerByName(string name)
+        public static Member GetCustomerByName(string name) // Vet inte om denna kommer fungera för oss
         {
             return ctx.Members
                 .FirstOrDefault(c => c.Username.ToLower() == name.ToLower());
@@ -41,6 +41,24 @@ namespace DataBaseConnection
                 return one_record_added;
             }
             catch (DbUpdateException e)
+            {
+                System.Diagnostics.Debug.WriteLine(e.Message);
+                System.Diagnostics.Debug.WriteLine(e.InnerException.Message);
+                return false;
+            }
+        }
+
+        public static bool AddNewMember(string newMember)
+        {
+            try
+            {
+                var item = newMember.Split(", ");
+                ctx.Add(new Member() { FirstName = item[0], LastName = item[1], Address = item[2], Phone = item[3], Email = item[4], Username = item[5]});
+
+                bool newMemberAdded = ctx.SaveChanges() == 1;
+                return newMemberAdded;
+            }
+            catch  (DbUpdateException e)
             {
                 System.Diagnostics.Debug.WriteLine(e.Message);
                 System.Diagnostics.Debug.WriteLine(e.InnerException.Message);
