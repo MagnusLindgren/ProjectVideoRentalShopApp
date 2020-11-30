@@ -23,13 +23,28 @@ namespace ProjectVideoRentalShopApp.SubWindows
         {
             InitializeComponent();
 
-            State.User = API.GetCustomerByName("torand"); //hämtar direkt från databasen
+            State.User = API.GetCustomerByName("torand"); //hämtar direkt från databasen (ta bort när inloggning fungerar)
             var currentUser = State.User; // hämtar från state.cs (den här från inloggningen)            
 
             Username.Content = currentUser.Username;
             Name.Content = currentUser.FirstName + " " + currentUser.LastName;
             Address.Content = currentUser.Address;
             Phone.Content = currentUser.Phone;
+        }
+
+        private void NameChange_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Not implemented yet", "Please contact Admin for more help",MessageBoxButton.OK);
+        }
+
+        private void AddressChange_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Not implemented yet", "Please contact Admin for more help", MessageBoxButton.OK);
+        }
+
+        private void PhoneChange_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Not implemented yet", "Please contact Admin for more help", MessageBoxButton.OK);
         }
     }
 }
