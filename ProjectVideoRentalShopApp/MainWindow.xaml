@@ -31,14 +31,14 @@
         </Ellipse>
 
         <!-- Titeln längst upp -->
-        <Label Grid.Column="1" Grid.Row="0" Name="Title" Content="Home" FontSize="40" HorizontalContentAlignment="Center" MouseDown="Title_MouseDown"></Label>
+        <Label Grid.Column="1" Grid.Row="0" Name="Title" Content="Nyheter" FontSize="40" HorizontalContentAlignment="Center" MouseDown="Title_MouseDown"></Label>
 
         <!-- Knapparna till vänster -->
         <StackPanel Grid.Column="0" Grid.Row="1" Margin="20">
-            <Button Height="30" Margin="0,0,0,10" Click="GoHome_Click">Home</Button>
-            <Button Height="30" Margin="0,0,0,10" Click="GoMyPage_Click">My Page</Button>
-            <Button Height="30" Margin="0,0,0,10" Click="GoStore_Click">Store</Button>
-            <Button Height="30" Margin="0,0,0,10" Click="Exit_Click">Exit</Button>
+            <Button Height="30" Margin="0,0,0,10" Click="GoHome_Click">Nyheter</Button>
+            <Button Height="30" Margin="0,0,0,10" Click="GoMyPage_Click">Min Profil</Button>
+            <Button Height="30" Margin="0,0,0,10" Click="GoStore_Click">Butik</Button>
+            <Button Height="30" Margin="0,0,0,10" Click="Exit_Click">Avsluta</Button>
         </StackPanel>
 
         <!-- 

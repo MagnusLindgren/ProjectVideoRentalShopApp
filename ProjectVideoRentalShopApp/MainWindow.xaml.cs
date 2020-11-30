@@ -29,7 +29,7 @@ namespace ProjectVideoRentalShopApp
 
         private void GoHome_Click(object sender, RoutedEventArgs e)
         {
-            Title.Content = "Home";
+            Title.Content = "Nyheter";
             Home.Visibility = Visibility.Visible;
             MyPage.Visibility = Visibility.Hidden;
             VideoStore.Visibility = Visibility.Hidden;
@@ -37,7 +37,7 @@ namespace ProjectVideoRentalShopApp
 
         private void GoMyPage_Click(object sender, RoutedEventArgs e)
         {
-            Title.Content = "My Page";
+            Title.Content = "Profil";
             Home.Visibility = Visibility.Hidden;
             MyPage.Visibility = Visibility.Visible;
             VideoStore.Visibility = Visibility.Hidden;
@@ -45,7 +45,7 @@ namespace ProjectVideoRentalShopApp
 
         private void GoStore_Click(object sender, RoutedEventArgs e)
         {
-            Title.Content = "Store";
+            Title.Content = "Butik";
             Home.Visibility = Visibility.Hidden;
             MyPage.Visibility = Visibility.Hidden;
             VideoStore.Visibility = Visibility.Visible;

@@ -40,7 +40,7 @@
                     <Setter Property="Grid.ZIndex" Value="1"/>
                     <Setter Property="RenderTransform">
                         <Setter.Value>
-                            <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                            <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
                         </Setter.Value>
                     </Setter>
                 </Trigger>
