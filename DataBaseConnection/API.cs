@@ -25,14 +25,15 @@ namespace DataBaseConnection
                 .Take(take_x)
                 .ToList();
         }
-        /*
+        
         public static List<Movie> GetMovieByCategory(string category)
         {
             return ctx.Movies
                 .OrderBy(m => m.Title)
-                .
+                .Where(c => c.Category == category)
+                .ToList();
         }
-        */
+        
         public static Member GetCustomerByName(string name) // Vet inte om denna kommer fungera för oss
         {
             return ctx.Members

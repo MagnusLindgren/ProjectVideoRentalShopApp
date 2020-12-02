@@ -84,10 +84,10 @@ namespace ProjectVideoRentalShopApp.SubWindows
                             // Om något gick fel så lägger vi in en placeholder 
                             image.Source = new BitmapImage(new Uri("https://wolper.com.au/wp-content/uploads/2017/10/image-placeholder.jpg"));
                         }
-
+                      
                         // Lägg till Image i Grid
                         MovieGrid.Children.Add(image);
-
+                        
                         // Placera in Image i Grid
                         Grid.SetRow(image, y);
                         Grid.SetColumn(image, x);

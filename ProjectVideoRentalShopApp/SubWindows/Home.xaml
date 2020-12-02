@@ -6,7 +6,20 @@
              xmlns:local="clr-namespace:ProjectVideoRentalShopApp.SubWindows"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+    <ScrollViewer>
+        <Grid Name="MovieGrid" Background="Gray" ShowGridLines="False">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Name="New"/>
+                <RowDefinition Name="Most_rented"/>
+                <RowDefinition Name="Last_rented"/>
+            </Grid.RowDefinitions>
+        </Grid>
+    </ScrollViewer>
 </UserControl>
