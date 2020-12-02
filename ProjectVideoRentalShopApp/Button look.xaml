@@ -13,10 +13,20 @@
                     <Border Background="{TemplateBinding Background}" CornerRadius="20"
                             BorderThickness="2"
                             BorderBrush="White">
-
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="Opacity" Value="0.4"/>
+                <Setter Property="Foreground" Value="DeepSkyBlue"/>
+
+
+            </Trigger>
+        </Style.Triggers>
     </Style>
 </ResourceDictionary>
