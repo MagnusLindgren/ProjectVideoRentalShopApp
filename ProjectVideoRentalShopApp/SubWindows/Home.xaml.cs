@@ -57,13 +57,12 @@ namespace ProjectVideoRentalShopApp.SubWindows
 
                     var image = new Image()
                     {
-
                         Cursor = Cursors.Hand,
                         VerticalAlignment = VerticalAlignment.Center,
                         HorizontalAlignment = HorizontalAlignment.Center,
                         Margin = new Thickness(4, 4, 4, 4)
                     };
-
+                    image.MouseUp += Image_MouseUp;
 
                     var title = new Label()
                     {
@@ -103,10 +102,15 @@ namespace ProjectVideoRentalShopApp.SubWindows
                 int i = 0 * MovieGrid.ColumnDefinitions.Count + x;
                 if (State.User.Rentals == null)
                 {
-                    var nothingRented = new Label
+                    var nothingRented = new Label //TODO Den syns inte?!
                     {
-                        Content = "Du har inte hyrt något ännu"
+                        Content = "Du har inte tittat på något ännu",
+                        FontSize = 20,
+                        Foreground = Brushes.White
                     };
+                    MovieGrid.Children.Add(nothingRented);
+                    Grid.SetRow(nothingRented, 3);
+                    Grid.SetColumn(nothingRented, 0);
                 }
 
                 else if (i < State.User.Rentals.Count)
@@ -120,6 +124,7 @@ namespace ProjectVideoRentalShopApp.SubWindows
                         HorizontalAlignment = HorizontalAlignment.Center,
                         Margin = new Thickness(4, 4, 4, 4)
                     };
+                    image.MouseUp += Image_MouseUp;
 
                     var title = new Label()
                     {
