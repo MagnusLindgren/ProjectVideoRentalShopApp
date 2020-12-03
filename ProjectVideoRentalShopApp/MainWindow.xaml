@@ -26,7 +26,7 @@
         <Ellipse Grid.Column="0" Grid.Row="0">
             <!-- Lite häftig clipping magi -->
             <Ellipse.Fill>
-                <ImageBrush ImageSource="Images/egoavatar.png" Stretch="UniformToFill"></ImageBrush> <!-- Vi har ingen användarbild i databasen så använder denna så länge -->
+                <ImageBrush ImageSource="Images/egoavatar.png" Stretch="UniformToFill"></ImageBrush> <!-- Vi har ingen användarbild i databasen så använder denna så länge, kanske ska ha logotyp här istället? -->
             </Ellipse.Fill>
         </Ellipse>
 

@@ -30,9 +30,9 @@
         <Label Name="Address" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" FontSize="20"></Label>
         <Label Name="Phone" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" FontSize="20"></Label>
 
-        <Button Grid.Column="2" Grid.Row="1" Margin="30" Click="NameChange_Click">Ändra</Button>
-        <Button Grid.Column="2" Grid.Row="2" Margin="30" Click="AddressChange_Click">Ändra</Button>
-        <Button Grid.Column="2" Grid.Row="3" Margin="30" Click="PhoneChange_Click">Ändra</Button>
+
+        <Button Grid.Column="2" Grid.Row="2" Margin="30" Height="30" Click="AddressChange_Click">Ändra</Button>
+        <Button Grid.Column="2" Grid.Row="3" Margin="30" Height="30" Click="PhoneChange_Click">Ändra</Button>
     </Grid>
     
 </UserControl>

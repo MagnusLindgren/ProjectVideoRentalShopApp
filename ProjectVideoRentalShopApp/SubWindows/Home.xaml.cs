@@ -115,13 +115,11 @@ namespace ProjectVideoRentalShopApp.SubWindows
 
                     var image = new Image()
                     {
-
                         Cursor = Cursors.Hand,
                         VerticalAlignment = VerticalAlignment.Center,
                         HorizontalAlignment = HorizontalAlignment.Center,
                         Margin = new Thickness(4, 4, 4, 4)
                     };
-
 
                     var title = new Label()
                     {
@@ -155,7 +153,7 @@ namespace ProjectVideoRentalShopApp.SubWindows
 
             }
         }
-        
+
         private void Image_MouseUp(object sender, MouseButtonEventArgs e)
         {
             var x = Grid.GetColumn(sender as UIElement);
@@ -165,10 +163,19 @@ namespace ProjectVideoRentalShopApp.SubWindows
 
             State.Pick = State.Movies[i];
 
-            if (API.RegisterSale(State.User, State.Pick))
-                MessageBox.Show("All is well and you can download your movie now.", "Sale Succeeded!", MessageBoxButton.OK, MessageBoxImage.Information);
-            else
-                MessageBox.Show("An error happened while buying the movie, please try again at a later time.", "Sale Failed!", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            MessageBoxResult input = MessageBox.Show("Vill du se den här filmen?", "Uthyrning", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+
+            switch (input)
+            {
+                case MessageBoxResult.Yes:
+                    if (API.RegisterSale(State.User, State.Pick))
+                        MessageBox.Show("Uthyrningen lyckades", "", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                    else
+                        MessageBox.Show("Något gick fel!", "Åh nej!", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                    break;
+                case MessageBoxResult.No:
+                    break;
+            }
         }
     }
 }

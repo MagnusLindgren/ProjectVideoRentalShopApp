@@ -32,10 +32,6 @@ namespace ProjectVideoRentalShopApp.SubWindows
             Phone.Content = currentUser.Phone;
         }
 
-        private void NameChange_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Not implemented yet", "Please contact Admin for more help",MessageBoxButton.OK);
-        }
 
         private void AddressChange_Click(object sender, RoutedEventArgs e)
         {

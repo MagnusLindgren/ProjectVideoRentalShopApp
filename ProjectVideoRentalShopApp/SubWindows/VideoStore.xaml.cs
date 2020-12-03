@@ -119,12 +119,19 @@ namespace ProjectVideoRentalShopApp.SubWindows
             // Lägg valet på minne.
             State.Pick = State.Movies[i];
 
-            // Försök att registrera en uthyrning.
-            if (API.RegisterSale(State.User, State.Pick))
-                // MessageBox är små pop-up fönster som är behändiga för att varna användaren om fel etc.
-                MessageBox.Show("All is well and you can download your movie now.", "Sale Succeeded!", MessageBoxButton.OK, MessageBoxImage.Information);
-            else
-                MessageBox.Show("An error happened while buying the movie, please try again at a later time.", "Sale Failed!", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            MessageBoxResult input = MessageBox.Show("Vill du se den här filmen?", "Uthyrning", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+            
+            switch (input)
+            {
+                case MessageBoxResult.Yes:
+                    if (API.RegisterSale(State.User, State.Pick))
+                        MessageBox.Show("Uthyrningen lyckades", "", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                    else
+                        MessageBox.Show("Något gick fel!", "Åh nej!", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                    break;
+                case MessageBoxResult.No:
+                    break;
+            }
         }
     }
 }
