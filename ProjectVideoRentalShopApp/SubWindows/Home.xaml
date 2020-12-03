@@ -16,9 +16,10 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Name="New"/>
-                <RowDefinition Name="Most_rented"/>
-                <RowDefinition Name="Last_rented"/>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="150" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="150" />
             </Grid.RowDefinitions>
         </Grid>
     </ScrollViewer>

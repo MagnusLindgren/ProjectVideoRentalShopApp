@@ -60,9 +60,6 @@ namespace ProjectVideoRentalShopApp.SubWindows
                         // Hämta ett film record
                         var movie = State.Movies[i];
 
-                        // Försök att skapa en Image Controller(legobit) och
-                        // placera den i rätt Grid cell enl. x,y koordinaterna
-                        // Skapa en Image som visar filmomslaget
                         var image = new Image()
                         {
                             Cursor = Cursors.Hand, // Visa en 'click me' hand när man hovrar över bilden
@@ -71,6 +68,16 @@ namespace ProjectVideoRentalShopApp.SubWindows
                             Margin = new Thickness(4, 4, 4, 4),
                         };
                         image.MouseUp += Image_MouseUp;
+
+                        var title = new Label()
+                        {
+                            Content = movie.Title,
+                            VerticalAlignment = VerticalAlignment.Bottom,
+                            HorizontalAlignment = HorizontalAlignment.Center,
+                            FontSize = 10,
+                            Foreground = Brushes.White,
+                            Background = Brushes.Black,
+                        };
 
                         try
                         {
@@ -86,11 +93,16 @@ namespace ProjectVideoRentalShopApp.SubWindows
                         }
                       
                         // Lägg till Image i Grid
-                        MovieGrid.Children.Add(image);
+                        MovieGrid.Children.Add(image);                        
                         
                         // Placera in Image i Grid
                         Grid.SetRow(image, y);
                         Grid.SetColumn(image, x);
+
+                        MovieGrid.Children.Add(title);
+                        Grid.SetRow(title, y);
+                        Grid.SetColumn(title, x);
+
                     }
                 }
             }

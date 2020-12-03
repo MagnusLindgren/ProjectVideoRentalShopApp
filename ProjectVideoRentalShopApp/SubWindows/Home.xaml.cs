@@ -22,34 +22,138 @@ namespace ProjectVideoRentalShopApp.SubWindows
         public Home()
         {
             InitializeComponent();
-            /*
-            for (int i = 0; i < MovieGrid.RowDefinitions.Count; i++)
+
+            var nyheter = new Label()
             {
-                for (int y = 0; y < MovieGrid.ColumnDefinitions.Count; y++)
+                Content = "Nyinkommet",
+                Foreground = Brushes.White,
+                FontSize = 20,
+                VerticalAlignment = VerticalAlignment.Center,
+                HorizontalAlignment = HorizontalAlignment.Left
+            };
+            MovieGrid.Children.Add(nyheter);
+            Grid.SetRow(nyheter, 0);
+            Grid.SetColumn(nyheter, 0);
+
+            var senaste = new Label()
+            {
+                Content = "Se igen",
+                Foreground = Brushes.White,
+                FontSize = 20,
+                VerticalAlignment = VerticalAlignment.Center,
+                HorizontalAlignment = HorizontalAlignment.Left
+            };
+            MovieGrid.Children.Add(senaste);
+            Grid.SetRow(senaste, 2);
+            Grid.SetColumn(senaste, 0);
+
+            for (int x = 0; x < MovieGrid.ColumnDefinitions.Count; x++)
+            {
+                State.Movies = API.GetMovieByNew();
+                int i = 0 * MovieGrid.ColumnDefinitions.Count + x;
+                if (i < State.Movies.Count)
                 {
-                    int x = i * MovieGrid.ColumnDefinitions.Count + y;
-                    if (x < State.Movies.Count)
+                    var movie = State.Movies[i];
+
+                    var image = new Image()
                     {
-                        var movie = State.Movies[i];
 
-                        try
-                        {
-                            var image = new Image();
-                            image.Source = new BitmapImage(new Uri(movie.ImageUrl));
+                        Cursor = Cursors.Hand,
+                        VerticalAlignment = VerticalAlignment.Center,
+                        HorizontalAlignment = HorizontalAlignment.Center,
+                        Margin = new Thickness(4, 4, 4, 4)
+                    };
 
-                            var title = new Label();
-                            title.Content = movie.Title;
-                        }
-                        catch (Exception e) when
-                            (e is ArgumentNullException ||
-                             e is System.IO.FileNotFoundException ||
-                             e is UriFormatException)
-                        {
-                            continue;
-                        }
+
+                    var title = new Label()
+                    {
+                        Content = movie.Title,
+                        VerticalAlignment = VerticalAlignment.Bottom,
+                        HorizontalAlignment = HorizontalAlignment.Center,
+                        FontSize = 10,
+                        Foreground = Brushes.White,
+                        Background = Brushes.Black
+                    };
+
+                    MovieGrid.Children.Add(image);
+                    Grid.SetRow(image, 1);
+                    Grid.SetColumn(image, x);
+                    MovieGrid.Children.Add(title);
+                    Grid.SetRow(title, 1);
+                    Grid.SetColumn(title, x);
+
+                    try
+                    {
+                        image.Source = new BitmapImage(new Uri(movie.ImageUrl));
+                    }
+                    catch (Exception e) when
+                        (e is ArgumentNullException ||
+                         e is System.IO.FileNotFoundException ||
+                         e is UriFormatException)
+                    {
+                        image.Source = new BitmapImage(new Uri("https://wolper.com.au/wp-content/uploads/2017/10/image-placeholder.jpg"));
                     }
                 }
-            }*/
+
+            }
+
+            for (int x = 0; x < MovieGrid.ColumnDefinitions.Count; x++)
+            {
+                State.User = API.GetCustomerByName("torand");
+                int i = 0 * MovieGrid.ColumnDefinitions.Count + x;
+                if (State.User.Rentals == null)
+                {
+                    var nothingRented = new Label
+                    {
+                        Content = "Du har inte hyrt något ännu"
+                    };
+                }
+
+                else if (i < State.User.Rentals.Count)
+                {
+                    var rented = State.User.Rentals[i];
+
+                    var image = new Image()
+                    {
+
+                        Cursor = Cursors.Hand,
+                        VerticalAlignment = VerticalAlignment.Center,
+                        HorizontalAlignment = HorizontalAlignment.Center,
+                        Margin = new Thickness(4, 4, 4, 4)
+                    };
+
+
+                    var title = new Label()
+                    {
+                        Content = rented.Movies.Title,
+                        VerticalAlignment = VerticalAlignment.Bottom,
+                        HorizontalAlignment = HorizontalAlignment.Center,
+                        FontSize = 10,
+                        Foreground = Brushes.White,
+                        Background = Brushes.Black
+                    };
+
+                    MovieGrid.Children.Add(image);
+                    Grid.SetRow(image, 3);
+                    Grid.SetColumn(image, x);
+                    MovieGrid.Children.Add(title);
+                    Grid.SetRow(title, 3);
+                    Grid.SetColumn(title, x);
+
+                    try
+                    {
+                        image.Source = new BitmapImage(new Uri(rented.Movies.ImageUrl));
+                    }
+                    catch (Exception e) when
+                        (e is ArgumentNullException ||
+                         e is System.IO.FileNotFoundException ||
+                         e is UriFormatException)
+                    {
+                        image.Source = new BitmapImage(new Uri("https://wolper.com.au/wp-content/uploads/2017/10/image-placeholder.jpg"));
+                    }
+                }
+
+            }
         }
         
         private void Image_MouseUp(object sender, MouseButtonEventArgs e)

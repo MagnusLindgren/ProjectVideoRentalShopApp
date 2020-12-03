@@ -30,7 +30,15 @@ namespace DataBaseConnection
         {
             return ctx.Movies
                 .OrderBy(m => m.Title)
-                .Where(c => c.Category == category)
+                .Where(m => m.Category == category)
+                .ToList();
+        }
+
+        //Hämtar på senaste tilläget i databasen (Högst id först)
+        public static List<Movie> GetMovieByNew()
+        {
+            return ctx.Movies
+                .OrderByDescending(m => m.Id)
                 .ToList();
         }
         

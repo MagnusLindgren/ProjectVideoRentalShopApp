@@ -55,7 +55,7 @@
         -->
 
         <Grid Grid.Column="1" Grid.Row="1">
-            <sub:Home x:Name="Home" Visibility="Hidden"></sub:Home>
+            <sub:Home x:Name="Home" Visibility="Visible"></sub:Home>
             <sub:MyPage x:Name="MyPage" Visibility="Hidden"></sub:MyPage>
             <sub:VideoStore x:Name="VideoStore" Visibility="Hidden"></sub:VideoStore>
         </Grid>
