@@ -35,11 +35,31 @@ namespace ProjectVideoRentalShopApp.SubWindows
 
         private void AddressChange_Click(object sender, RoutedEventArgs e)
         {
+            var change = new TextBox()
+            {
+                Height = 30,
+                VerticalAlignment = VerticalAlignment.Center,
+                VerticalContentAlignment = VerticalAlignment.Center
+            };
+
+            UserInfo.Children.Add(change);
+            Grid.SetRow(change, 2);
+            Grid.SetColumn(change, 1);
             MessageBox.Show("Not implemented yet", "Please contact Admin for more help", MessageBoxButton.OK);
         }
 
         private void PhoneChange_Click(object sender, RoutedEventArgs e)
         {
+            var change = new TextBox()
+            {
+                Height = 30,
+                VerticalAlignment = VerticalAlignment.Center,
+                VerticalContentAlignment = VerticalAlignment.Center
+            };
+
+            UserInfo.Children.Add(change);
+            Grid.SetRow(change, 3);
+            Grid.SetColumn(change, 1);
             MessageBox.Show("Not implemented yet", "Please contact Admin for more help", MessageBoxButton.OK);
         }
     }
