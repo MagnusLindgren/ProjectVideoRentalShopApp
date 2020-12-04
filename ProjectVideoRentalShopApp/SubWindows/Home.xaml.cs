@@ -100,12 +100,12 @@ namespace ProjectVideoRentalShopApp.SubWindows
             {
                 State.User = API.GetCustomerByName("torand");
                 int i = 0 * MovieGrid.ColumnDefinitions.Count + x;
-                if (State.User.Rentals == null)
+                if (State.User.Rentals.Count == 0)
                 {
-                    var nothingRented = new Label //TODO Den syns inte?!
+                    var nothingRented = new Label
                     {
-                        Content = "Du har inte tittat på något ännu",
-                        FontSize = 20,
+                        Content = "Du har inte tittat \npå något ännu",
+                        FontSize = 15,
                         Foreground = Brushes.White
                     };
                     MovieGrid.Children.Add(nothingRented);
