@@ -73,6 +73,8 @@ namespace DataBaseConnection
             }
         }
 
+        // Lägg till member med sträng i given ordning.
+        // FirstName, LastName, Address, Phone, Email, Username
         public static bool AddNewMember(string newMember)
         {
             try
