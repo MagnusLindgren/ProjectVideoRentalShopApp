@@ -36,8 +36,9 @@
         <!-- Knapparna till vänster -->
         <StackPanel Grid.Column="0" Grid.Row="1" Margin="20">
             <Button Height="30" Margin="0,0,0,10" Click="GoHome_Click" Cursor="Hand">Nyheter</Button>
-            <Button Height="30" Margin="0,0,0,10" Click="GoMyPage_Click" Cursor="Hand">Min Profil</Button>
             <Button Height="30" Margin="0,0,0,10" Click="GoStore_Click" Cursor="Hand">Butik</Button>
+            <Button Height="30" Margin="0,0,0,10" Click="GoSearch_Click" Cursor="Hand">Sök</Button>
+            <Button Height="30" Margin="0,0,0,10" Click="GoMyPage_Click" Cursor="Hand">Min Profil</Button>
             <Button Height="30" Margin="0,0,0,10" Click="Exit_Click" Cursor="Hand">Avsluta</Button>
         </StackPanel>
 
@@ -58,6 +59,7 @@
             <sub:Home x:Name="Home" Visibility="Visible"></sub:Home>
             <sub:MyPage x:Name="MyPage" Visibility="Hidden"></sub:MyPage>
             <sub:VideoStore x:Name="VideoStore" Visibility="Hidden"></sub:VideoStore>
+            <sub:Search x:Name="Search" Visibility="Hidden"></sub:Search>
         </Grid>
     </Grid>
 </Window>

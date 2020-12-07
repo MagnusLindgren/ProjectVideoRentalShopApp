@@ -41,6 +41,14 @@ namespace DataBaseConnection
                 .OrderByDescending(m => m.Id)
                 .ToList();
         }
+
+        public static List<Movie> GetMovieByTitle(string titleName)
+        {
+            return ctx.Movies
+                .OrderBy(m => m.Title)
+                .Where(m => m.Title.Contains(titleName))
+                .ToList();
+        }
         
         public static Member GetCustomerByName(string name) // Vet inte om denna kommer fungera för oss
         {

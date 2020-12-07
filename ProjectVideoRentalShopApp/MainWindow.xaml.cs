@@ -33,6 +33,7 @@ namespace ProjectVideoRentalShopApp
             Home.Visibility = Visibility.Visible;
             MyPage.Visibility = Visibility.Hidden;
             VideoStore.Visibility = Visibility.Hidden;
+            Search.Visibility = Visibility.Hidden;
         }
 
         private void GoMyPage_Click(object sender, RoutedEventArgs e)
@@ -41,6 +42,7 @@ namespace ProjectVideoRentalShopApp
             Home.Visibility = Visibility.Hidden;
             MyPage.Visibility = Visibility.Visible;
             VideoStore.Visibility = Visibility.Hidden;
+            Search.Visibility = Visibility.Hidden;           
         }
 
         private void GoStore_Click(object sender, RoutedEventArgs e)
@@ -49,6 +51,18 @@ namespace ProjectVideoRentalShopApp
             Home.Visibility = Visibility.Hidden;
             MyPage.Visibility = Visibility.Hidden;
             VideoStore.Visibility = Visibility.Visible;
+            Search.Visibility = Visibility.Hidden;
+        }
+
+        private void GoSearch_Click(object sender, RoutedEventArgs e)
+        {
+            Title.Content = "Sök";
+            Home.Visibility = Visibility.Hidden;
+            MyPage.Visibility = Visibility.Hidden;
+            VideoStore.Visibility = Visibility.Hidden;
+            Search.Visibility = Visibility.Hidden;
+            // Tillfällig messagebox då jag inte får search att uppdatera sig
+            MessageBox.Show("The page you are trying to reach are not implemented yet. Please try again later.", "Not implemented", MessageBoxButton.OK, MessageBoxImage.Exclamation);
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
