@@ -25,7 +25,7 @@ namespace DataBaseConnection
                 .Take(take_x)
                 .ToList();
         }
-        
+        // Hämtar filmer per kategori
         public static List<Movie> GetMovieByCategory(string category)
         {
             return ctx.Movies
@@ -41,7 +41,7 @@ namespace DataBaseConnection
                 .OrderByDescending(m => m.Id)
                 .ToList();
         }
-
+        // Hämtar filmer per titel
         public static List<Movie> GetMovieByTitle(string titleName)
         {
             return ctx.Movies
@@ -49,7 +49,7 @@ namespace DataBaseConnection
                 .Where(m => m.Title.Contains(titleName))
                 .ToList();
         }
-        
+        // Hämtar medlemmar per namn
         public static Member GetCustomerByName(string name) // Vet inte om denna kommer fungera för oss
         {
             return ctx.Members
