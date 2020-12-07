@@ -23,7 +23,7 @@ namespace ProjectVideoRentalShopApp.SubWindows
         {
             InitializeComponent();
 
-            State.User = API.GetCustomerByName("torand"); //hämtar direkt från databasen (ta bort när inloggning fungerar)
+            //State.User = API.GetCustomerByName("torand"); //hämtar direkt från databasen (ta bort när inloggning fungerar)
             var currentUser = State.User; // hämtar från state.cs (den här från inloggningen)            
 
             Username.Content = currentUser.Username;

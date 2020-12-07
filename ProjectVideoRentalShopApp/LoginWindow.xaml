@@ -13,7 +13,7 @@
     
 
 
-    <Grid>
+    <Grid MouseDown="MouseDown">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -54,7 +54,8 @@
                         HorizontalContentAlignment="Left"
                         Opacity="0.5"
                         Height="25"
-                        Margin="63,0,0,0"/>
+                        Margin="63,0,0,0"
+                        PreviewMouseLeftButtonDown="textbox_PreviewMouseLeftButtonDown" />
                     <iconPacks:PackIconMaterial Kind="Account"
                                             VerticalAlignment="Center"
                                             HorizontalAlignment="Center"

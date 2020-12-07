@@ -98,7 +98,7 @@ namespace ProjectVideoRentalShopApp.SubWindows
 
             for (int x = 0; x < MovieGrid.ColumnDefinitions.Count; x++)
             {
-                State.User = API.GetCustomerByName("torand");
+                //State.User = API.GetCustomerByName("torand");
                 int i = 0 * MovieGrid.ColumnDefinitions.Count + x;
                 if (State.User.Rentals.Count == 0)
                 {

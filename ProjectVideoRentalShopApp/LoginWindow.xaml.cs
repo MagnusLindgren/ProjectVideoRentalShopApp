@@ -24,7 +24,7 @@ namespace ProjectVideoRentalShopApp
         }
 
         private void LogIn_Click(object sender, RoutedEventArgs e)
-        {
+        {            
             // Använder min namngedda TextBox objektinstans för att få tag på
             // det användaren skrev in.
             string username_in_text = NameField.Text.Trim();
@@ -47,6 +47,14 @@ namespace ProjectVideoRentalShopApp
                 // Annars återställer vi innehållet i TextBox
                 NameField.Text = "...";
             }
+        }
+        private void textbox_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            NameField.Clear();
+        }
+        private void MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
         }
     }
 }
